@@ -1,4 +1,7 @@
 {
   "item.strangemachine.orichalcum_ingot": "Orichalcum Ingot",
-  "item.strangemachine.orichalcum_nugget": "Orichalcum Nugget"
+  "item.strangemachine.orichalcum_nugget": "Orichalcum Nugget",
+
+  "block.strangemachine.orichalcum_block": "Orichalcum Block",
+  "block.strangemachine.orichalcum_ore": "Orichalcum Ore"
 }

@@ -1,4 +1,7 @@
 {
   "item.strangemachine.orichalcum_ingot": "오리할콘 주괴",
-  "item.strangemachine.orichalcum_nugget": "오리할콘 조각"
+  "item.strangemachine.orichalcum_nugget": "오리할콘 조각",
+
+  "block.strangemachine.orichalcum_block": "오리할콘 블럭",
+  "block.strangemachine.orichalcum_ore": "오리할콘 원석"
 }
