@@ -1,5 +1,6 @@
 package com.reasure.strangemachine;
 
+import com.reasure.strangemachine.item.ModItems;
 import net.fabricmc.api.ModInitializer;
 import org.apache.logging.log4j.LogManager;
 import org.apache.logging.log4j.Logger;
@@ -10,6 +11,8 @@ public class StrangeMachine implements ModInitializer {
 
 	@Override
 	public void onInitialize() {
-		LOGGER.info("Hello Fabric world!");
+		LOGGER.info("Init mod for " + MOD_ID);
+
+		ModItems.registerModItems();
 	}
 }
