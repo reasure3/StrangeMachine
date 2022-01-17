@@ -5,3 +5,9 @@ distributed under CC BY-SA 4.0 International License:
 https://creativecommons.org/licenses/by-sa/4.0/
 
 If you use those textures, add this file to your repository and add this to your project!
+
+Orichalcum Blaster & Paintings by PlatinumG17 (https://creativecommons.org/licenses/by-sa/4.0/):
+https://www.curseforge.com/members/platinumg17/projects
+
+Custom Sign Code by Nyuppo (Distributed under GNU General Public License v3.0):
+https://github.com/nyuppo/fabric-sign-example
