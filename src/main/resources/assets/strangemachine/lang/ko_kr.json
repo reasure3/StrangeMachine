@@ -1,9 +1,12 @@
 {
   "item.strangemachine.orichalcum_ingot": "오리할콘 주괴",
   "item.strangemachine.orichalcum_nugget": "오리할콘 조각",
+  "item.strangemachine.raw_orichalcum": "오리할콘 원석",
 
   "block.strangemachine.orichalcum_block": "오리할콘 블럭",
-  "block.strangemachine.orichalcum_ore": "오리할콘 원석",
+  "block.strangemachine.raw_orichalcum_block": "오리할콘 원석 블록",
+  "block.strangemachine.orichalcum_ore": "오리할콘 광석",
+  "block.strangemachine.deepslate_orichalcum_ore": "심층암 오리할콘 광석",
 
   "itemGroup.strangemachine.strange_machine": "잡다한 기계 모드"
 }

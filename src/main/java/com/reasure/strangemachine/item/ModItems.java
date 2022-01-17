@@ -9,7 +9,11 @@ import net.minecraft.util.registry.Registry;
 public class ModItems {
     public static final Item ORICHALCUM_INGOT = registerItem("orichalcum_ingot",
             new Item(new FabricItemSettings().group(ModItemGroups.STRANGE_MACHINE)));
+
     public static final Item ORICHALCUM_NUGGET = registerItem("orichalcum_nugget",
+            new Item(new FabricItemSettings().group(ModItemGroups.STRANGE_MACHINE)));
+
+    public static final Item RAW_ORICHALCUM = registerItem("raw_orichalcum",
             new Item(new FabricItemSettings().group(ModItemGroups.STRANGE_MACHINE)));
 
     private static Item registerItem(String name, Item item) {
