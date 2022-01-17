@@ -3,5 +3,7 @@
   "item.strangemachine.orichalcum_nugget": "오리할콘 조각",
 
   "block.strangemachine.orichalcum_block": "오리할콘 블럭",
-  "block.strangemachine.orichalcum_ore": "오리할콘 원석"
+  "block.strangemachine.orichalcum_ore": "오리할콘 원석",
+
+  "itemGroup.strangemachine.strange_machine": "잡다한 기계 모드"
 }
