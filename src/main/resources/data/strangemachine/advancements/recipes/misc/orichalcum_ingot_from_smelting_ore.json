@@ -1,0 +1,34 @@
+{
+  "parent": "minecraft:recipes/root",
+  "rewards": {
+    "recipes": [
+      "strangemachine:orichalcum_ingot_from_smelting_ore"
+    ]
+  },
+  "criteria": {
+    "has_orichalcum_ore": {
+      "trigger": "minecraft:inventory_changed",
+      "conditions": {
+        "items": [
+          {
+            "items": [
+              "strangemachine:orichalcum_ore"
+            ]
+          }
+        ]
+      }
+    },
+    "has_the_recipe": {
+      "trigger": "minecraft:recipe_unlocked",
+      "conditions": {
+        "recipe": "strangemachine:orichalcum_ingot_from_smelting_ore"
+      }
+    }
+  },
+  "requirements": [
+    [
+      "has_orichalcum_ore",
+      "has_the_recipe"
+    ]
+  ]
+}

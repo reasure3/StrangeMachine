@@ -1,0 +1,9 @@
+{
+  "type": "minecraft:blasting",
+  "ingredient": {
+    "item": "strangemachine:raw_orichalcum"
+  },
+  "result": "strangemachine:orichalcum_ingot",
+  "experience": 0.7,
+  "cookingtime": 100
+}

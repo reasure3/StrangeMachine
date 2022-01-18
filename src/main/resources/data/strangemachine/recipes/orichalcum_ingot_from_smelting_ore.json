@@ -1,0 +1,9 @@
+{
+  "type": "minecraft:smelting",
+  "ingredient": {
+    "item": "strangemachine:orichalcum_ore"
+  },
+  "result": "strangemachine:orichalcum_ingot",
+  "experience": 0.7,
+  "cookingtime": 200
+}

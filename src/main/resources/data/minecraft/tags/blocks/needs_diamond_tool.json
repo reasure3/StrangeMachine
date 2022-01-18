@@ -1,0 +1,9 @@
+{
+  "replace": false,
+  "values": [
+    "strangemachine:orichalcum_ore",
+    "strangemachine:deepslate_orichalcum_ore",
+    "strangemachine:orichalcum_block",
+    "strangemachine:raw_orichalcum_block"
+  ]
+}

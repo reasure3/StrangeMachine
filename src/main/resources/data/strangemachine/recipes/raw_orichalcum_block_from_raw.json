@@ -1,0 +1,16 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "pattern": [
+    "###",
+    "###",
+    "###"
+  ],
+  "key": {
+    "#": {
+      "item": "strangemachine:raw_orichalcum"
+    }
+  },
+  "result": {
+    "item": "strangemachine:raw_orichalcum_block"
+  }
+}

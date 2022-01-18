@@ -1,0 +1,34 @@
+{
+  "parent": "minecraft:recipes/root",
+  "rewards": {
+    "recipes": [
+      "strangemachine:orichalcum_ingots_from_block"
+    ]
+  },
+  "criteria": {
+    "has_orichalcum_block": {
+      "trigger": "minecraft:inventory_changed",
+      "conditions": {
+        "items": [
+          {
+            "items": [
+              "strangemachine:orichalcum_block"
+            ]
+          }
+        ]
+      }
+    },
+    "has_the_recipe": {
+      "trigger": "minecraft:recipe_unlocked",
+      "conditions": {
+        "recipe": "strangemachine:orichalcum_ingots_from_block"
+      }
+    }
+  },
+  "requirements": [
+    [
+      "has_orichalcum_block",
+      "has_the_recipe"
+    ]
+  ]
+}

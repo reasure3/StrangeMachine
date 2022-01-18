@@ -1,0 +1,12 @@
+{
+  "type": "minecraft:crafting_shapeless",
+  "ingredients": [
+    {
+      "item": "strangemachine:raw_orichalcum_block"
+    }
+  ],
+  "result": {
+    "item": "strangemachine:raw_orichalcum",
+    "count": 9
+  }
+}
