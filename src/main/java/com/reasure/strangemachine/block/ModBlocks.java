@@ -1,6 +1,7 @@
 package com.reasure.strangemachine.block;
 
 import com.reasure.strangemachine.StrangeMachine;
+import com.reasure.strangemachine.block.custom.SpeedyBlock;
 import com.reasure.strangemachine.item.ModItemGroups;
 import net.fabricmc.fabric.api.item.v1.FabricItemSettings;
 import net.fabricmc.fabric.api.object.builder.v1.block.FabricBlockSettings;
@@ -25,8 +26,11 @@ public class ModBlocks {
     public static final Block DEEPSLATE_ORICHALCUM_ORE = registerBlock("deepslate_orichalcum_ore",
             new Block(FabricBlockSettings.of(Material.STONE).strength(6f, 4.5f).requiresTool()), ModItemGroups.STRANGE_MACHINE);
 
-    private static Block registerBlock(String name, Block block, ItemGroup group) {
-        registerBlockItem(name, block, group);
+    public static final Block SPEEDY_BLOCK = registerBlock("speedy_block",
+            new SpeedyBlock(FabricBlockSettings.of(Material.STONE).strength(4f).requiresTool()), ModItemGroups.STRANGE_MACHINE);
+
+        private static Block registerBlock(String name, Block block, ItemGroup group) {
+            registerBlockItem(name, block, group);
         return Registry.register(Registry.BLOCK, new Identifier(StrangeMachine.MOD_ID, name), block);
     }
 
