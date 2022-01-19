@@ -2,6 +2,7 @@ package com.reasure.strangemachine;
 
 import com.reasure.strangemachine.block.ModBlocks;
 import com.reasure.strangemachine.item.ModItems;
+import com.reasure.strangemachine.util.ModRegistries;
 import net.fabricmc.api.ModInitializer;
 import org.apache.logging.log4j.LogManager;
 import org.apache.logging.log4j.Logger;
@@ -16,5 +17,7 @@ public class StrangeMachine implements ModInitializer {
 
 		ModItems.registerModItems();
 		ModBlocks.registerModBlocks();
+
+		ModRegistries.registerModStuffs();
 	}
 }

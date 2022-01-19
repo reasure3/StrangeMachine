@@ -23,6 +23,9 @@ public class ModItems {
     public static final Item TURNIP = registerItem("turnip",
             new Item(new FabricItemSettings().group(ModItemGroups.STRANGE_MACHINE).food(ModFoodComponents.TURNIP)));
 
+    public static final Item COAL_SLIVER = registerItem("coal_sliver",
+            new Item(new FabricItemSettings().group(ModItemGroups.STRANGE_MACHINE)));
+
     private static Item registerItem(String name, Item item) {
         return Registry.register(Registry.ITEM, new Identifier(StrangeMachine.MOD_ID, name), item);
     }
