@@ -2,14 +2,20 @@ package com.reasure.strangemachine.item.custom;
 
 import net.minecraft.block.Block;
 import net.minecraft.block.Blocks;
+import net.minecraft.client.gui.screen.Screen;
+import net.minecraft.client.item.TooltipContext;
 import net.minecraft.entity.player.PlayerEntity;
 import net.minecraft.item.Item;
+import net.minecraft.item.ItemStack;
 import net.minecraft.item.ItemUsageContext;
 import net.minecraft.tag.BlockTags;
 import net.minecraft.tag.Tag;
+import net.minecraft.text.Text;
 import net.minecraft.text.TranslatableText;
 import net.minecraft.util.ActionResult;
 import net.minecraft.util.math.BlockPos;
+import net.minecraft.world.World;
+import org.jetbrains.annotations.Nullable;
 
 import java.util.List;
 
@@ -17,6 +23,9 @@ public class DowsingRodItem extends Item {
     private static final List<Tag<Block>> valuableBlockTags = List.of(
             BlockTags.COAL_ORES, BlockTags.COPPER_ORES, BlockTags.IRON_ORES, BlockTags.LAPIS_ORES,
             BlockTags.REDSTONE_ORES, BlockTags.GOLD_ORES, BlockTags.DIAMOND_ORES, BlockTags.EMERALD_ORES
+    );
+    private static final List<Block> valuableBlocks = List.of(
+            Blocks.CHEST, Blocks.TRAPPED_CHEST, Blocks.NETHER_QUARTZ_ORE, Blocks.GOLD_BLOCK, Blocks.ANCIENT_DEBRIS, Blocks.END_PORTAL_FRAME
     );
 
     public DowsingRodItem(Settings settings) {
@@ -54,12 +63,29 @@ public class DowsingRodItem extends Item {
         return ActionResult.CONSUME;
     }
 
+    @Override
+    public void appendTooltip(ItemStack stack, @Nullable World world, List<Text> tooltip, TooltipContext context) {
+        if (Screen.hasShiftDown()) {
+            tooltip.add(new TranslatableText("item.strangemachine.dowsing_rod.tooltip.shift"));
+            for (Tag<Block> tag : valuableBlockTags) {
+                tooltip.add(new TranslatableText("item.strangemachine.dowsing_rod.tooltip.valuables_tag",
+                        tag.values().get(0).getName()));
+            }
+            for (Block block : valuableBlocks) {
+                tooltip.add(new TranslatableText("item.strangemachine.dowsing_rod.tooltip.valuables_block", block.getName()));
+            }
+        } else {
+            tooltip.add(new TranslatableText("item.strangemachine.dowsing_rod.tooltip"));
+        }
+    }
+
     private void sendBlockMessage(BlockPos blockPos, PlayerEntity player, Block belowBlock) {
         player.sendMessage(new TranslatableText("item.strangemachine.dowsing_rod.found_valuables",
                 belowBlock.getName(), blockPos.getX(), blockPos.getY(), blockPos.getZ()), false);
     }
 
     private boolean isValuableBlock(Block block) {
-        return valuableBlockTags.stream().anyMatch(tag -> tag.contains(block)) || block == Blocks.CHEST;
+        return valuableBlockTags.stream().anyMatch(tag -> tag.contains(block))
+                || valuableBlocks.contains(block);
     }
 }
