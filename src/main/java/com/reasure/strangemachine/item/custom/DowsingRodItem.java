@@ -12,7 +12,6 @@ import net.minecraft.util.ActionResult;
 import net.minecraft.util.math.BlockPos;
 
 import java.util.List;
-import java.util.Objects;
 
 public class DowsingRodItem extends Item {
     private static final List<Tag<Block>> valuableBlockTags = List.of(
