@@ -2,11 +2,15 @@
   "item.strangemachine.orichalcum_ingot": "Orichalcum Ingot",
   "item.strangemachine.orichalcum_nugget": "Orichalcum Nugget",
   "item.strangemachine.raw_orichalcum": "Raw Orichalcum",
+  "item.strangemachine.dowsing_rod": "Dowsing Rod",
 
   "block.strangemachine.orichalcum_block": "Orichalcum Block",
   "block.strangemachine.raw_orichalcum_block": "Raw Orichalcum Block",
   "block.strangemachine.orichalcum_ore": "Orichalcum Ore",
   "block.strangemachine.deepslate_orichalcum_ore": "Deepslate Orichalcum Ore",
 
-  "itemGroup.strangemachine.strange_machine": "Strange Machine"
+  "itemGroup.strangemachine.strange_machine": "Strange Machine",
+
+  "item.strangemachine.dowsing_rod.found_valuables": "Found %1$s at (X: %2$d Y: %3$d Z: %4$d)",
+  "item.strangemachine.dowsing_rod.no_valuables": "No Valuables found!"
 }

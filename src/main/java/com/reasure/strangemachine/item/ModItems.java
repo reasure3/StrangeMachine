@@ -1,6 +1,7 @@
 package com.reasure.strangemachine.item;
 
 import com.reasure.strangemachine.StrangeMachine;
+import com.reasure.strangemachine.item.custom.DowsingRodItem;
 import net.fabricmc.fabric.api.item.v1.FabricItemSettings;
 import net.minecraft.item.Item;
 import net.minecraft.util.Identifier;
@@ -15,6 +16,9 @@ public class ModItems {
 
     public static final Item RAW_ORICHALCUM = registerItem("raw_orichalcum",
             new Item(new FabricItemSettings().group(ModItemGroups.STRANGE_MACHINE)));
+
+    public static final Item DOWSING_ROD = registerItem("dowsing_rod",
+            new DowsingRodItem(new FabricItemSettings().group(ModItemGroups.STRANGE_MACHINE).maxDamage(32)));
 
     private static Item registerItem(String name, Item item) {
         return Registry.register(Registry.ITEM, new Identifier(StrangeMachine.MOD_ID, name), item);

@@ -2,11 +2,15 @@
   "item.strangemachine.orichalcum_ingot": "오리할콘 주괴",
   "item.strangemachine.orichalcum_nugget": "오리할콘 조각",
   "item.strangemachine.raw_orichalcum": "오리할콘 원석",
+  "item.strangemachine.dowsing_rod": "다우징 막대",
 
   "block.strangemachine.orichalcum_block": "오리할콘 블럭",
   "block.strangemachine.raw_orichalcum_block": "오리할콘 원석 블록",
   "block.strangemachine.orichalcum_ore": "오리할콘 광석",
   "block.strangemachine.deepslate_orichalcum_ore": "심층암 오리할콘 광석",
 
-  "itemGroup.strangemachine.strange_machine": "잡다한 기계 모드"
+  "itemGroup.strangemachine.strange_machine": "잡다한 기계 모드",
+
+  "item.strangemachine.dowsing_rod.found_valuables": "(X: %2$d Y: %3$d Z: %4$d)에서 %1$s 발견!",
+  "item.strangemachine.dowsing_rod.no_valuables": "탐지 실패"
 }
