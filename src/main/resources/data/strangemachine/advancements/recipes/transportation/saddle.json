@@ -6,17 +6,13 @@
     ]
   },
   "criteria": {
-    "has_ingredients": {
+    "has_one_of_ingredients": {
       "trigger": "minecraft:inventory_changed",
       "conditions": {
         "items": [
           {
             "items": [
-              "minecraft:leather"
-            ]
-          },
-          {
-            "items": [
+              "minecraft:leather",
               "minecraft:tripwire_hook"
             ]
           }
@@ -32,7 +28,7 @@
   },
   "requirements": [
     [
-      "has_ingredients",
+      "has_one_of_ingredients",
       "has_the_recipe"
     ]
   ]
