@@ -1,8 +1,9 @@
 {
   "type": "minecraft:crafting_shapeless",
+  "group": "orichalcum_ingot",
   "ingredients": [
     {
-      "item": "strangemachine:orichalcum_block"
+      "tag": "c:orichalcum_blocks"
     }
   ],
   "result": {

@@ -2,18 +2,16 @@
   "parent": "minecraft:recipes/root",
   "rewards": {
     "recipes": [
-      "strangemachine:orichalcum_ingot_from_smelting_deepslate_ore"
+      "strangemachine:coal_sliver"
     ]
   },
   "criteria": {
-    "has_deepslate_orichalcum_ore": {
+    "has_coals": {
       "trigger": "minecraft:inventory_changed",
       "conditions": {
         "items": [
           {
-            "items": [
-              "strangemachine:deepslate_orichalcum_ore"
-            ]
+            "tag": "minecraft:coals"
           }
         ]
       }
@@ -21,13 +19,13 @@
     "has_the_recipe": {
       "trigger": "minecraft:recipe_unlocked",
       "conditions": {
-        "recipe": "strangemachine:orichalcum_ingot_from_smelting_deepslate_ore"
+        "recipe": "strangemachine:coal_sliver"
       }
     }
   },
   "requirements": [
     [
-      "has_deepslate_orichalcum_ore",
+      "has_coals",
       "has_the_recipe"
     ]
   ]

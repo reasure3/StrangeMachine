@@ -11,9 +11,7 @@
       "conditions": {
         "items": [
           {
-            "items": [
-              "strangemachine:orichalcum_block"
-            ]
+            "tag": "c:orichalcum_blocks"
           }
         ]
       }

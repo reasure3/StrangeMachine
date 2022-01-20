@@ -1,18 +1,18 @@
 package com.reasure.strangemachine.item.custom;
 
+import com.reasure.strangemachine.util.ModTags;
 import net.minecraft.block.Block;
-import net.minecraft.block.Blocks;
 import net.minecraft.client.gui.screen.Screen;
 import net.minecraft.client.item.TooltipContext;
 import net.minecraft.entity.player.PlayerEntity;
 import net.minecraft.item.Item;
 import net.minecraft.item.ItemStack;
 import net.minecraft.item.ItemUsageContext;
-import net.minecraft.tag.BlockTags;
-import net.minecraft.tag.Tag;
+import net.minecraft.text.LiteralText;
 import net.minecraft.text.Text;
 import net.minecraft.text.TranslatableText;
 import net.minecraft.util.ActionResult;
+import net.minecraft.util.Formatting;
 import net.minecraft.util.math.BlockPos;
 import net.minecraft.world.World;
 import org.jetbrains.annotations.Nullable;
@@ -20,14 +20,6 @@ import org.jetbrains.annotations.Nullable;
 import java.util.List;
 
 public class DowsingRodItem extends Item {
-    private static final List<Tag<Block>> valuableBlockTags = List.of(
-            BlockTags.COAL_ORES, BlockTags.COPPER_ORES, BlockTags.IRON_ORES, BlockTags.LAPIS_ORES,
-            BlockTags.REDSTONE_ORES, BlockTags.GOLD_ORES, BlockTags.DIAMOND_ORES, BlockTags.EMERALD_ORES
-    );
-    private static final List<Block> valuableBlocks = List.of(
-            Blocks.CHEST, Blocks.TRAPPED_CHEST, Blocks.NETHER_QUARTZ_ORE, Blocks.GOLD_BLOCK, Blocks.ANCIENT_DEBRIS, Blocks.END_PORTAL_FRAME
-    );
-
     public DowsingRodItem(Settings settings) {
         super(settings);
     }
@@ -66,16 +58,11 @@ public class DowsingRodItem extends Item {
     @Override
     public void appendTooltip(ItemStack stack, @Nullable World world, List<Text> tooltip, TooltipContext context) {
         if (Screen.hasShiftDown()) {
-            tooltip.add(new TranslatableText("item.strangemachine.dowsing_rod.tooltip.shift"));
-            for (Tag<Block> tag : valuableBlockTags) {
-                tooltip.add(new TranslatableText("item.strangemachine.dowsing_rod.tooltip.valuables_tag",
-                        tag.values().get(0).getName()));
-            }
-            for (Block block : valuableBlocks) {
-                tooltip.add(new TranslatableText("item.strangemachine.dowsing_rod.tooltip.valuables_block", block.getName()));
-            }
+            addValuablesTooltip(tooltip);
         } else {
             tooltip.add(new TranslatableText("item.strangemachine.dowsing_rod.tooltip"));
+            tooltip.add(new LiteralText(""));
+            tooltip.add(new TranslatableText("item.strangemachine.dowsing_rod.tooltip.do_shift"));
         }
     }
 
@@ -85,7 +72,30 @@ public class DowsingRodItem extends Item {
     }
 
     private boolean isValuableBlock(Block block) {
-        return valuableBlockTags.stream().anyMatch(tag -> tag.contains(block))
-                || valuableBlocks.contains(block);
+        return ModTags.Blocks.DOWSING_ROD_DETECTABLE_BLOCKS.contains(block);
+    }
+
+    private void addValuablesTooltip(List<Text> tooltip) {
+        StringBuilder line = new StringBuilder();
+        for (Block block : ModTags.Blocks.DOWSING_ROD_DETECTABLE_BLOCKS.values()) {
+            for (String token : block.getName().getString().split(" ")) {
+                if (line.length() + token.length() > 30) {
+                    tooltip.add(new LiteralText(line.toString().trim())
+                            .formatted(Formatting.DARK_GRAY));
+                    line = new StringBuilder();
+                }
+
+                line.append(token).append(" ");
+            }
+
+            line.deleteCharAt(line.lastIndexOf(" ")).append(", ");
+        }
+
+        line.deleteCharAt(line.lastIndexOf(" "));
+        line.deleteCharAt(line.lastIndexOf(","));
+        if (line.length() > 0) {
+            tooltip.add(new LiteralText(line.toString())
+                    .formatted(Formatting.DARK_GRAY));
+        }
     }
 }

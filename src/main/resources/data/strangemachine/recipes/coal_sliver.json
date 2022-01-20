@@ -2,11 +2,11 @@
   "type": "minecraft:crafting_shapeless",
   "ingredients": [
     {
-      "tag": "c:orichalcum_ingots"
+      "tag": "minecraft:coals"
     }
   ],
   "result": {
-    "item": "strangemachine:orichalcum_nugget",
+    "item": "strangemachine:coal_slivers",
     "count": 9
   }
 }

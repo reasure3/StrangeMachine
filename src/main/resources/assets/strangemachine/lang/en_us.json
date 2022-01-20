@@ -16,8 +16,6 @@
 
   "item.strangemachine.dowsing_rod.found_valuables": "Found %1$s at (X: %2$d Y: %3$d Z: %4$d)",
   "item.strangemachine.dowsing_rod.no_valuables": "No Valuables found!",
-  "item.strangemachine.dowsing_rod.tooltip": "Press §eSHIFT§r for more Information",
-  "item.strangemachine.dowsing_rod.tooltip.shift": "Right Click to find valuables",
-  "item.strangemachine.dowsing_rod.tooltip.valuables_tag": "- %s and others",
-  "item.strangemachine.dowsing_rod.tooltip.valuables_block": "- %s"
+  "item.strangemachine.dowsing_rod.tooltip": "Right Click to find valuables",
+  "item.strangemachine.dowsing_rod.tooltip.do_shift": "Press §eSHIFT§r to see the list of blocks it detects"
 }

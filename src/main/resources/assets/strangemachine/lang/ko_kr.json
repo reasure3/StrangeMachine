@@ -16,8 +16,6 @@
 
   "item.strangemachine.dowsing_rod.found_valuables": "(X: %2$d Y: %3$d Z: %4$d)에서 %1$s 발견!",
   "item.strangemachine.dowsing_rod.no_valuables": "탐지 실패",
-  "item.strangemachine.dowsing_rod.tooltip": "§eSHIFT§r를 눌러 더 자세히 보기",
-  "item.strangemachine.dowsing_rod.tooltip.shift": "가치 있는 블럭 위해 땅을 클릭하세요",
-  "item.strangemachine.dowsing_rod.tooltip.valuables_tag": "- %s, 그 외 기타",
-  "item.strangemachine.dowsing_rod.tooltip.valuables_block": "- %s"
+  "item.strangemachine.dowsing_rod.tooltip": "값진 것들을 찾기 위헤 블럭을 우클릭 해보세요!",
+  "item.strangemachine.dowsing_rod.tooltip.do_shift": "§eSHIFT§r를 눌러 탐지하는 블럭 목록 보기"
 }

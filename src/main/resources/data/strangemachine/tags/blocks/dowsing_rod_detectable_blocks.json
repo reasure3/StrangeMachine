@@ -1,0 +1,20 @@
+{
+  "replace": false,
+  "values": [
+    "#minecraft:coal_ores",
+    "#minecraft:copper_ores",
+    "#minecraft:iron_ores",
+    "#minecraft:lapis_ores",
+    "#minecraft:redstone_ores",
+    "#minecraft:gold_ores",
+    "#minecraft:emerald_ores",
+    "#minecraft:diamond_ores",
+    "#c:orichalcum_ores",
+    "minecraft:chest",
+    "minecraft:trapped_chest",
+    "minecraft:nether_quartz_ore",
+    "minecraft:gold_block",
+    "minecraft:ancient_debris",
+    "minecraft:end_portal_frame"
+  ]
+}

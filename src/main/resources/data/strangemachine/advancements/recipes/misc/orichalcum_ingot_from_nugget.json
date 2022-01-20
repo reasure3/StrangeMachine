@@ -11,9 +11,7 @@
       "conditions": {
         "items": [
           {
-            "items": [
-              "strangemachine:orichalcum_nugget"
-            ]
+            "tag": "c:orichalcum_nuggets"
           }
         ]
       }

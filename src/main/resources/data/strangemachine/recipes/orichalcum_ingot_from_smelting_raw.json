@@ -1,5 +1,6 @@
 {
   "type": "minecraft:smelting",
+  "group": "orichalcum_ingot",
   "ingredient": {
     "item": "strangemachine:raw_orichalcum"
   },
