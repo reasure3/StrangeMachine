@@ -1,0 +1,7 @@
+{
+  "parent": "block/cube_column",
+  "textures": {
+    "end": "strangemachine:block/orichalcum_block",
+    "side": "strangemachine:block/orichalcum_slab_double"
+  }
+}

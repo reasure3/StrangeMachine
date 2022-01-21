@@ -7,6 +7,7 @@ import net.minecraft.item.Item;
 import net.minecraft.util.Identifier;
 import net.minecraft.util.registry.Registry;
 
+@SuppressWarnings("unused")
 public class ModItems {
     public static final Item ORICHALCUM_INGOT = registerItem("orichalcum_ingot",
             new Item(new FabricItemSettings().group(ModItemGroups.STRANGE_MACHINE)));
