@@ -1,0 +1,39 @@
+{
+  "parent": "minecraft:recipes/root",
+  "rewards": {
+    "recipes": [
+      "strangemachine:infinity_coal"
+    ]
+  },
+  "criteria": {
+    "has_one_of_ingredients": {
+      "trigger": "minecraft:inventory_changed",
+      "conditions": {
+        "items": [
+          {
+            "items": [
+              "minecraft:coal_block"
+            ]
+          },
+          {
+            "items": [
+              "minecraft:diamond_block"
+            ]
+          }
+        ]
+      }
+    },
+    "has_the_recipe": {
+      "trigger": "minecraft:recipe_unlocked",
+      "conditions": {
+        "recipe": "strangemachine:infinity_coal"
+      }
+    }
+  },
+  "requirements": [
+    [
+      "has_one_of_ingredients",
+      "has_the_recipe"
+    ]
+  ]
+}

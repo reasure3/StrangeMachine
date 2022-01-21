@@ -2,9 +2,11 @@ package com.reasure.strangemachine.item;
 
 import com.reasure.strangemachine.StrangeMachine;
 import com.reasure.strangemachine.item.custom.DowsingRodItem;
+import com.reasure.strangemachine.item.custom.GlintItem;
 import net.fabricmc.fabric.api.item.v1.FabricItemSettings;
 import net.minecraft.item.Item;
 import net.minecraft.util.Identifier;
+import net.minecraft.util.Rarity;
 import net.minecraft.util.registry.Registry;
 
 @SuppressWarnings("unused")
@@ -26,6 +28,9 @@ public class ModItems {
 
     public static final Item COAL_SLIVER = registerItem("coal_sliver",
             new Item(new FabricItemSettings().group(ModItemGroups.STRANGE_MACHINE)));
+
+    public static final Item INFINITY_COAL = registerItem("infinity_coal",
+            new GlintItem(new FabricItemSettings().group(ModItemGroups.STRANGE_MACHINE).maxCount(1).rarity(Rarity.EPIC)));
 
     private static Item registerItem(String name, Item item) {
         return Registry.register(Registry.ITEM, new Identifier(StrangeMachine.MOD_ID, name), item);
