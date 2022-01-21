@@ -1,0 +1,11 @@
+{
+  "type": "minecraft:crafting_shapeless",
+  "ingredients": [
+    {
+      "tag": "c:orichalcum_nuggets"
+    }
+  ],
+  "result": {
+    "item": "strangemachine:orichalcum_button"
+  }
+}

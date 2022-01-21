@@ -12,6 +12,8 @@
   "block.strangemachine.deepslate_orichalcum_ore": "Deepslate Orichalcum Ore",
   "block.strangemachine.orichalcum_stairs": "Orichalcum Stairs",
   "block.strangemachine.orichalcum_slab": "Orichalcum Slab",
+  "block.strangemachine.orichalcum_button": "Orichalcum Button",
+  "block.strangemachine.orichalcum_pressure_plate": "Orichalcum Pressure Plate",
   "block.strangemachine.speedy_block": "Speedy Block",
 
   "itemGroup.strangemachine.strange_machine": "Strange Machine",

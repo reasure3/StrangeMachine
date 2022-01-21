@@ -1,13 +1,16 @@
 package com.reasure.strangemachine.block;
 
 import com.reasure.strangemachine.StrangeMachine;
+import com.reasure.strangemachine.block.custom.ModPressurePlateBlock;
 import com.reasure.strangemachine.block.custom.ModStairsBlock;
+import com.reasure.strangemachine.block.custom.ModStoneButtonBlock;
 import com.reasure.strangemachine.block.custom.SpeedyBlock;
 import com.reasure.strangemachine.item.ModItemGroups;
 import net.fabricmc.fabric.api.item.v1.FabricItemSettings;
 import net.fabricmc.fabric.api.object.builder.v1.block.FabricBlockSettings;
 import net.minecraft.block.Block;
 import net.minecraft.block.Material;
+import net.minecraft.block.PressurePlateBlock;
 import net.minecraft.block.SlabBlock;
 import net.minecraft.item.BlockItem;
 import net.minecraft.item.Item;
@@ -38,6 +41,13 @@ public class ModBlocks {
 
     public static final Block ORICHALCUM_SLAB = registerBlock("orichalcum_slab",
             new SlabBlock(FabricBlockSettings.of(Material.METAL).strength(6f).requiresTool()), ModItemGroups.STRANGE_MACHINE);
+
+    public static final Block ORICHALCUM_BUTTON = registerBlock("orichalcum_button",
+            new ModStoneButtonBlock(FabricBlockSettings.of(Material.METAL).strength(6f).requiresTool()), ModItemGroups.STRANGE_MACHINE);
+
+    public static final Block ORICHALCUM_PRESSURE_PLATE = registerBlock("orichalcum_pressure_plate",
+            new ModPressurePlateBlock(PressurePlateBlock.ActivationRule.MOBS,
+                    FabricBlockSettings.of(Material.METAL).strength(6f).requiresTool()), ModItemGroups.STRANGE_MACHINE);
 
     private static Block registerBlock(String name, Block block, ItemGroup group) {
         registerBlockItem(name, block, group);

@@ -1,0 +1,32 @@
+{
+  "parent": "minecraft:recipes/root",
+  "rewards": {
+    "recipes": [
+      "strangemachine:orichalcum_button"
+    ]
+  },
+  "criteria": {
+    "has_orichalcum_nugget": {
+      "trigger": "minecraft:inventory_changed",
+      "conditions": {
+        "items": [
+          {
+            "tag": "c:orichalcum_nuggets"
+          }
+        ]
+      }
+    },
+    "has_the_recipe": {
+      "trigger": "minecraft:recipe_unlocked",
+      "conditions": {
+        "recipe": "strangemachine:orichalcum_button"
+      }
+    }
+  },
+  "requirements": [
+    [
+      "has_orichalcum_nugget",
+      "has_the_recipe"
+    ]
+  ]
+}

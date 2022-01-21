@@ -12,6 +12,8 @@
   "block.strangemachine.deepslate_orichalcum_ore": "심층암 오리할콘 광석",
   "block.strangemachine.orichalcum_stairs": "오리할콘 계단",
   "block.strangemachine.orichalcum_slab": "오리할콘 반블록",
+  "block.strangemachine.orichalcum_button": "오리할콘 버튼",
+  "block.strangemachine.orichalcum_pressure_plate": "오리할콘 감압판",
   "block.strangemachine.speedy_block": "가속 블록",
 
   "itemGroup.strangemachine.strange_machine": "잡다한 기계 모드",

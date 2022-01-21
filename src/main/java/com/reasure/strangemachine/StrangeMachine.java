@@ -9,7 +9,7 @@ import org.apache.logging.log4j.Logger;
 
 public class StrangeMachine implements ModInitializer {
 	public static final String MOD_ID = "strangemachine";
-	public static final Logger LOGGER = LogManager.getLogger(MOD_ID);
+	public static final Logger LOGGER = LogManager.getLogger("Strange Machine");
 
 	@Override
 	public void onInitialize() {
