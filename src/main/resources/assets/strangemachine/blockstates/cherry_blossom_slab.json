@@ -1,0 +1,13 @@
+{
+  "variants": {
+    "type=bottom": {
+      "model": "strangemachine:block/cherry_blossom_slab"
+    },
+    "type=double": {
+      "model": "strangemachine:block/cherry_blossom_slab_double"
+    },
+    "type=top": {
+      "model": "strangemachine:block/cherry_blossom_slab_top"
+    }
+  }
+}

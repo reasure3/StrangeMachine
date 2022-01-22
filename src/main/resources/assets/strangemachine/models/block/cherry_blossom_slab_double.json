@@ -1,0 +1,7 @@
+{
+  "parent": "block/cube_column",
+  "textures": {
+    "end": "strangemachine:block/cherry_blossom_planks",
+    "side": "strangemachine:block/cherry_blossom_planks"
+  }
+}

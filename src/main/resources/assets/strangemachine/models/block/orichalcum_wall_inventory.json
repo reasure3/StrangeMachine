@@ -1,6 +1,0 @@
-{
-  "parent": "minecraft:block/wall_inventory",
-  "textures": {
-    "wall": "strangemachine:block/orichalcum_block_no_border"
-  }
-}

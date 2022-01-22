@@ -1,8 +1,0 @@
-{
-  "parent": "minecraft:block/stairs",
-  "textures": {
-    "bottom": "strangemachine:block/orichalcum_block",
-    "top": "strangemachine:block/orichalcum_block",
-    "side": "strangemachine:block/orichalcum_block"
-  }
-}

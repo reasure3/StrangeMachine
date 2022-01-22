@@ -4,13 +4,6 @@
     "strangemachine:orichalcum_ore",
     "strangemachine:deepslate_orichalcum_ore",
     "strangemachine:orichalcum_block",
-    "strangemachine:raw_orichalcum_block",
-    "strangemachine:orichalcum_stairs",
-    "strangemachine:orichalcum_slab",
-    "strangemachine:orichalcum_button",
-    "strangemachine:orichalcum_pressure_plate",
-    "strangemachine:orichalcum_fence",
-    "strangemachine:orichalcum_fence_gate",
-    "strangemachine:orichalcum_wall"
+    "strangemachine:raw_orichalcum_block"
   ]
 }

@@ -1,0 +1,11 @@
+{
+  "type": "minecraft:crafting_shapeless",
+  "ingredients": [
+    {
+      "item": "strangemachine:cherry_blossom_planks"
+    }
+  ],
+  "result": {
+    "item": "strangemachine:cherry_blossom_button"
+  }
+}

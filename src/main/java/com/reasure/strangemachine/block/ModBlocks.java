@@ -12,6 +12,7 @@ import net.minecraft.block.*;
 import net.minecraft.item.BlockItem;
 import net.minecraft.item.Item;
 import net.minecraft.item.ItemGroup;
+import net.minecraft.sound.BlockSoundGroup;
 import net.minecraft.util.Identifier;
 import net.minecraft.util.registry.Registry;
 
@@ -32,28 +33,31 @@ public class ModBlocks {
     public static final Block SPEEDY_BLOCK = registerBlock("speedy_block",
             new SpeedyBlock(FabricBlockSettings.of(Material.STONE).strength(4f).requiresTool()), ModItemGroups.STRANGE_MACHINE);
 
-    public static final Block ORICHALCUM_STAIRS = registerBlock("orichalcum_stairs",
-            new ModStairsBlock(ModBlocks.ORICHALCUM_BLOCK.getDefaultState(),
-                    FabricBlockSettings.of(Material.METAL).strength(6f).requiresTool()), ModItemGroups.STRANGE_MACHINE);
+    public static final Block CHERRY_BLOSSOM_PLANKS = registerBlock("cherry_blossom_planks",
+            new Block(FabricBlockSettings.of(Material.WOOD, MapColor.PINK).strength(2f, 3f).sounds(BlockSoundGroup.WOOD)),
+            ModItemGroups.STRANGE_MACHINE);
 
-    public static final Block ORICHALCUM_SLAB = registerBlock("orichalcum_slab",
-            new SlabBlock(FabricBlockSettings.of(Material.METAL).strength(6f).requiresTool()), ModItemGroups.STRANGE_MACHINE);
+    public static final Block CHERRY_BLOSSOM_STAIRS = registerBlock("cherry_blossom_stairs",
+            new ModStairsBlock(CHERRY_BLOSSOM_PLANKS.getDefaultState(),
+                    FabricBlockSettings.copy(CHERRY_BLOSSOM_PLANKS)), ModItemGroups.STRANGE_MACHINE);
 
-    public static final Block ORICHALCUM_BUTTON = registerBlock("orichalcum_button",
-            new ModStoneButtonBlock(FabricBlockSettings.of(Material.METAL).strength(6f).requiresTool()), ModItemGroups.STRANGE_MACHINE);
+    public static final Block CHERRY_BLOSSOM_SLAB = registerBlock("cherry_blossom_slab",
+            new SlabBlock(FabricBlockSettings.copy(CHERRY_BLOSSOM_PLANKS)), ModItemGroups.STRANGE_MACHINE);
 
-    public static final Block ORICHALCUM_PRESSURE_PLATE = registerBlock("orichalcum_pressure_plate",
-            new ModPressurePlateBlock(PressurePlateBlock.ActivationRule.MOBS,
-                    FabricBlockSettings.of(Material.METAL).strength(6f).requiresTool()), ModItemGroups.STRANGE_MACHINE);
+    public static final Block CHERRY_BLOSSOM_BUTTON = registerBlock("cherry_blossom_button",
+            new ModStoneButtonBlock(FabricBlockSettings.of(Material.DECORATION).noCollision().strength(0.5f).sounds(BlockSoundGroup.WOOD)),
+            ModItemGroups.STRANGE_MACHINE);
 
-    public static final Block ORICHALCUM_FENCE = registerBlock("orichalcum_fence",
-            new FenceBlock(FabricBlockSettings.of(Material.METAL).strength(6f).requiresTool()), ModItemGroups.STRANGE_MACHINE);
+    public static final Block CHERRY_BLOSSOM_PRESSURE_PLATE = registerBlock("cherry_blossom_pressure_plate",
+            new ModPressurePlateBlock(PressurePlateBlock.ActivationRule.EVERYTHING,
+                    FabricBlockSettings.of(Material.WOOD, CHERRY_BLOSSOM_PLANKS.getDefaultMapColor()).noCollision().strength(0.5f).sounds(BlockSoundGroup.WOOD)),
+            ModItemGroups.STRANGE_MACHINE);
 
-    public static final Block ORICHALCUM_FENCE_GATE = registerBlock("orichalcum_fence_gate",
-            new FenceGateBlock(FabricBlockSettings.of(Material.METAL).strength(6f).requiresTool()), ModItemGroups.STRANGE_MACHINE);
+    public static final Block CHERRY_BLOSSOM_FENCE = registerBlock("cherry_blossom_fence",
+            new FenceBlock(FabricBlockSettings.copy(CHERRY_BLOSSOM_PLANKS)), ModItemGroups.STRANGE_MACHINE);
 
-    public static final Block ORICHALCUM_WALL = registerBlock("orichalcum_wall",
-            new WallBlock(FabricBlockSettings.of(Material.METAL).strength(6f).requiresTool()), ModItemGroups.STRANGE_MACHINE);
+    public static final Block CHERRY_BLOSSOM_FENCE_GATE = registerBlock("cherry_blossom_fence_gate",
+            new FenceGateBlock(FabricBlockSettings.copy(CHERRY_BLOSSOM_FENCE)), ModItemGroups.STRANGE_MACHINE);
 
     private static Block registerBlock(String name, Block block, ItemGroup group) {
         registerBlockItem(name, block, group);
