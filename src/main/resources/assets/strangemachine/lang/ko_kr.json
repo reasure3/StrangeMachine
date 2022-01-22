@@ -15,6 +15,9 @@
   "block.strangemachine.orichalcum_slab": "오리할콘 반블록",
   "block.strangemachine.orichalcum_button": "오리할콘 버튼",
   "block.strangemachine.orichalcum_pressure_plate": "오리할콘 감압판",
+  "block.strangemachine.orichalcum_fence": "오리할콘 울타리",
+  "block.strangemachine.orichalcum_fence_gate": "오리할콘 울타리 문",
+  "block.strangemachine.orichalcum_wall": "오리할콘 벽",
   "block.strangemachine.speedy_block": "가속 블록",
 
   "itemGroup.strangemachine.strange_machine": "잡다한 기계 모드",

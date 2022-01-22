@@ -1,0 +1,19 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "pattern": [
+    "IBI",
+    "IBI"
+  ],
+  "key": {
+    "B": {
+      "tag": "c:orichalcum_blocks"
+    },
+    "I": {
+      "tag": "c:orichalcum_ingots"
+    }
+  },
+  "result": {
+    "item": "strangemachine:orichalcum_wall",
+    "count": 6
+  }
+}

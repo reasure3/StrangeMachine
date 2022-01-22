@@ -1,0 +1,43 @@
+{
+  "parent": "minecraft:recipes/root",
+  "rewards": {
+    "recipes": [
+      "strangemachine:orichalcum_fence_gate"
+    ]
+  },
+  "criteria": {
+    "has_orichalcum_ingot": {
+      "trigger": "minecraft:inventory_changed",
+      "conditions": {
+        "items": [
+          {
+            "tag": "c:orichalcum_ingots"
+          }
+        ]
+      }
+    },
+    "has_orichalcum_nugget": {
+      "trigger": "minecraft:inventory_changed",
+      "conditions": {
+        "items": [
+          {
+            "tag": "c:orichalcum_nuggets"
+          }
+        ]
+      }
+    },
+    "has_the_recipe": {
+      "trigger": "minecraft:recipe_unlocked",
+      "conditions": {
+        "recipe": "strangemachine:orichalcum_fence_gate"
+      }
+    }
+  },
+  "requirements": [
+    [
+      "has_orichalcum_ingot",
+      "has_orichalcum_nugget",
+      "has_the_recipe"
+    ]
+  ]
+}

@@ -15,6 +15,9 @@
   "block.strangemachine.orichalcum_slab": "Orichalcum Slab",
   "block.strangemachine.orichalcum_button": "Orichalcum Button",
   "block.strangemachine.orichalcum_pressure_plate": "Orichalcum Pressure Plate",
+  "block.strangemachine.orichalcum_fence": "Orichalcum Fence",
+  "block.strangemachine.orichalcum_fence_gate": "Orichalcum Fence Gate",
+  "block.strangemachine.orichalcum_wall": "Orichalcum Pressure Wall",
   "block.strangemachine.speedy_block": "Speedy Block",
 
   "itemGroup.strangemachine.strange_machine": "Strange Machine",

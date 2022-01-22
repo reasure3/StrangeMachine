@@ -4,9 +4,9 @@
   "package": "com.reasure.strangemachine.mixin",
   "compatibilityLevel": "JAVA_16",
   "mixins": [
-    "ItemAccessor"
   ],
   "client": [
+    "ItemAccessor"
   ],
   "server": [
   ],

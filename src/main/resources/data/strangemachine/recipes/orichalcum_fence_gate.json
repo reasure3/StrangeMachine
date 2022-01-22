@@ -1,0 +1,18 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "pattern": [
+    "NIN",
+    "NIN"
+  ],
+  "key": {
+    "I": {
+      "tag": "c:orichalcum_ingots"
+    },
+    "N": {
+      "tag": "c:orichalcum_nuggets"
+    }
+  },
+  "result": {
+    "item": "strangemachine:orichalcum_fence_gate"
+  }
+}
