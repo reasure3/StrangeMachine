@@ -1,8 +1,9 @@
 {
   "type": "minecraft:crafting_shaped",
-  "group": "wooden_pressure_plate",
+  "group": "wooden_trapdoor",
   "pattern": [
-    "##"
+    "###",
+    "###"
   ],
   "key": {
     "#": {
@@ -10,6 +11,7 @@
     }
   },
   "result": {
-    "item": "strangemachine:cherry_blossom_pressure_plate"
+    "item": "strangemachine:cherry_blossom_trapdoor",
+    "count": 2
   }
 }

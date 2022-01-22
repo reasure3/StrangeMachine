@@ -1,6 +1,6 @@
 package com.reasure.strangemachine.util;
 
-import com.reasure.strangemachine.StrangeMachine;
+import com.reasure.strangemachine.StrangeMachineMod;
 import net.fabricmc.fabric.api.tag.TagFactory;
 import net.minecraft.block.Block;
 import net.minecraft.item.Item;
@@ -16,7 +16,7 @@ public class ModTags {
         public static final Tag.Identified<Block> ORICHALCUM_ORES = createCommonTag("orichalcum_ores");
 
         private static Tag.Identified<Block> createTag(String name) {
-            return TagFactory.BLOCK.create(new Identifier(StrangeMachine.MOD_ID, name));
+            return TagFactory.BLOCK.create(new Identifier(StrangeMachineMod.MOD_ID, name));
         }
 
         private static Tag.Identified<Block> createCommonTag(String name) {
@@ -29,7 +29,7 @@ public class ModTags {
         public static final Tag.Identified<Item> ORICHALCUM_NUGGETS = createCommonTag("orichalcum_nuggets");
 
         private static Tag.Identified<Item> createTag(String name) {
-            return TagFactory.ITEM.create(new Identifier(StrangeMachine.MOD_ID, name));
+            return TagFactory.ITEM.create(new Identifier(StrangeMachineMod.MOD_ID, name));
         }
 
         private static Tag.Identified<Item> createCommonTag(String name) {

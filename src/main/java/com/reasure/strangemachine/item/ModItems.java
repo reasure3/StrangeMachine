@@ -1,6 +1,6 @@
 package com.reasure.strangemachine.item;
 
-import com.reasure.strangemachine.StrangeMachine;
+import com.reasure.strangemachine.StrangeMachineMod;
 import com.reasure.strangemachine.item.custom.DowsingRodItem;
 import com.reasure.strangemachine.item.custom.GlintItem;
 import net.fabricmc.fabric.api.item.v1.FabricItemSettings;
@@ -33,11 +33,11 @@ public class ModItems {
             new GlintItem(new FabricItemSettings().group(ModItemGroups.STRANGE_MACHINE).maxCount(1).rarity(Rarity.EPIC)));
 
     private static Item registerItem(String name, Item item) {
-        return Registry.register(Registry.ITEM, new Identifier(StrangeMachine.MOD_ID, name), item);
+        return Registry.register(Registry.ITEM, new Identifier(StrangeMachineMod.MOD_ID, name), item);
     }
 
     public static void registerModItems() {
-        StrangeMachine.LOGGER.info("Registering Mod Items for " + StrangeMachine.MOD_ID);
+        StrangeMachineMod.LOGGER.info("Registering Mod Items for " + StrangeMachineMod.MOD_ID);
     }
 
 }

@@ -16,7 +16,12 @@
   "environment": "*",
   "entrypoints": {
     "main": [
-      "com.reasure.strangemachine.StrangeMachine"
+      "com.reasure.strangemachine.StrangeMachineMod"
+    ],
+    "client": [
+      "com.reasure.strangemachine.StrangeMachineClient"
+    ],
+    "server": [
     ]
   },
   "mixins": [

@@ -1,6 +1,6 @@
 package com.reasure.strangemachine.util;
 
-import com.reasure.strangemachine.StrangeMachine;
+import com.reasure.strangemachine.StrangeMachineMod;
 import com.reasure.strangemachine.item.ModItems;
 import com.reasure.strangemachine.mixin.ItemAccessor;
 import net.fabricmc.fabric.api.registry.FuelRegistry;
@@ -11,7 +11,7 @@ public class ModRegistries {
     }
 
     private static void registerFuels() {
-        StrangeMachine.LOGGER.info("Registering Fuels for "+ StrangeMachine.MOD_ID);
+        StrangeMachineMod.LOGGER.info("Registering Fuels for "+ StrangeMachineMod.MOD_ID);
 
         FuelRegistry registry = FuelRegistry.INSTANCE;
         // Coal: 80seconds, Coal Sliver: 20seconds
